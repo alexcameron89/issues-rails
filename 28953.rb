@@ -22,6 +22,6 @@ class BugTest < Minitest::Test
   def test_blankness
     non_utf8_string = "my value".encode("UTF-16LE")
 
-    assert_false non_utf8_string.blank?
+    refute non_utf8_string.blank?
   end
 end
